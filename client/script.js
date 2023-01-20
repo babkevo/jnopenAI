@@ -1,7 +1,6 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
-
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
@@ -87,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://jnchatai.onrender.com/', {
+    const response = await fetch('http://localhost:5000/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
